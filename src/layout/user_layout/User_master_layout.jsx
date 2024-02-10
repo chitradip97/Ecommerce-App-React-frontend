@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 // user style
 import '../../assets/user_assets/user_home/css/user_home_styles.css';
@@ -24,6 +25,7 @@ function User_master_layout() {
     <Header_banner/>
     <Body_user/>
     <Footer_User/>
+    <Outlet/>
     </>
     
     );

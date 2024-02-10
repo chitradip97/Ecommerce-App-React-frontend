@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navber_User() {
   return (
@@ -73,6 +74,45 @@ function Navber_User() {
                 </span>
               </button>
             </form>
+
+            {/* Navbar*/}
+            <ul className="navbar-nav ms-auto ms-md-5 me-3 me-lg-4">
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i className="fas fa-user fa-fw" />
+                </Link>
+                <ul
+                  className="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <Link className="dropdown-item" href="#!">
+                      User Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="admin">
+                      Admin Login
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#!">
+                      Logout
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>

@@ -4,15 +4,19 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// layout
+// admin layout
 import Footer from './layout/admin_layout/Footer'
-import Master_layout from './layout/admin_pages/Master_layout';
-import Navbar from './layout/admin_pages/Navbar';
-import Sidebar from './layout/admin_pages/Sidebar';
+import Master_layout from './layout/admin_layout/Master_layout';
+import Navbar from './layout/admin_layout/Navbar';
+import Sidebar from './layout/admin_layout/Sidebar';
 
-// pages
-import Dashboard from './pages/admin_pages/Dashboard'
-import Profile from './pages/admin_com/Profile'
+//admin pages
+import Dashboard from './pages/admin_pages/Dashboard';
+import Profile from './pages/admin_pages/Profile';
+
+
+// user layout
+import User_master_layout from './layout/user_layout/User_master_layout';
 
 import {
   createBrowserRouter,
@@ -23,13 +27,12 @@ import {
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App/>}>
-      {/* <Route index element={<Master_layout/>}/>
-      <Route path='Navber' element={<Navbar/>}/>
-      <Route path='Sidebar' element={<Sidebar/>}/>
-      <Route path='Footer' element={<Footer/>}/> */}
-      <Route path='admin/Dashboard' index element={<Dashboard/>}/>
-      <Route path='admin/Profile' index element={<Profile/>}/>
+    <Route path='/' element={<User_master_layout/>}>
+      {/* <Route index element={<User_master_layout/>}/> */}
+      <Route path='admin' element={<Master_layout/>}>
+        <Route path='/admin/Dashboard'  element={<Dashboard/>}/>
+        <Route path='/admin/Profile'  element={<Profile/>}/>
+      </Route>
     </Route>
 
   )

@@ -11,13 +11,13 @@ function Sidebar() {
         <div className="sb-sidenav-menu">
           <div className="nav">
             <div className="sb-sidenav-menu-heading">Core</div>
-            <NavLink className="nav-link" to="admin/Dashboard">
+            <NavLink className="nav-link" to="/admin/Dashboard">
               <div className="sb-nav-link-icon">
                 <i className="fas fa-tachometer-alt" />
               </div>
               Dashboard
             </NavLink>
-            <NavLink className="nav-link" to="admin/Profile">
+            <NavLink className="nav-link" to="/admin/Profile">
               <div className="sb-nav-link-icon">
                 <i className="fas fa-tachometer-alt" />
               </div>
