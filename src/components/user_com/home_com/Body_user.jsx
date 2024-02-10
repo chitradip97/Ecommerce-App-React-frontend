@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer_User() {
+function Body_user() {
     return ( 
         <>
         
@@ -8,4 +8,4 @@ function Footer_User() {
      );
 }
 
-export default Footer_User;
+export default Body_user;
