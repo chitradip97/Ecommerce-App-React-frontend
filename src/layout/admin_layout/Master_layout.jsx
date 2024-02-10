@@ -1,4 +1,6 @@
 import React from 'react'
+
+// layout
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
@@ -7,7 +9,7 @@ import Footer from './Footer';
  import { Outlet } from 'react-router-dom';
 
 //  Components
-import Dashboard from '../../components/admin_com/Dashboard';
+import Dashboard from '../../pages/admin_pages/Dashboard';
 
 function Master_layout() {
     return ( 
