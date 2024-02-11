@@ -22,10 +22,11 @@ function User_master_layout() {
     return ( 
     <>
     <Navber_User/>
-    <Header_banner/>
-    <Body_user/>
-    <Footer_User/>
+    {/* <Header_banner/>
+    <Body_user/> */}
     <Outlet/>
+    <Footer_User/>
+    
     </>
     
     );

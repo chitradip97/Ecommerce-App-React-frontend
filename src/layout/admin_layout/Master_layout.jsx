@@ -18,7 +18,7 @@ function Master_layout() {
     <Navbar/>
     <div id='layoutSidenav'>
         <div id='layoutSidenav_nav'>
-        < Sidebar/>
+        <Sidebar/>
         </div >
     
     <div id='layoutSidenav_content'>

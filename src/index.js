@@ -14,9 +14,19 @@ import Sidebar from './layout/admin_layout/Sidebar';
 import Dashboard from './pages/admin_pages/Dashboard';
 import Profile from './pages/admin_pages/Profile';
 
+// Auth pages
+import Registration from './pages/Auth_pages/Registration';
+import User_login from './pages/Auth_pages/User_login';
+import Admin_login from './pages/Auth_pages/Admin_login';
+
 
 // user layout
 import User_master_layout from './layout/user_layout/User_master_layout';
+
+
+// user Pages
+import Home from './pages/user_pages/Home';
+
 
 import {
   createBrowserRouter,
@@ -27,12 +37,20 @@ import {
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<User_master_layout/>}>
-      {/* <Route index element={<User_master_layout/>}/> */}
+    <Route path='/' element={<App/>}>
+      {/* <Route path='user' element={<User_master_layout/>}> */}
+      <Route index element={<Home/>}/>
+      <Route path='Registration' element={<Registration/>}/>
+      <Route path='User_login' element={<User_login/>}/>
+      <Route path='Admin_login' element={<Admin_login/>}/>
+      {/* </Route> */}
+      
+      
       <Route path='admin' element={<Master_layout/>}>
         <Route path='/admin/Dashboard'  element={<Dashboard/>}/>
         <Route path='/admin/Profile'  element={<Profile/>}/>
       </Route>
+
     </Route>
 
   )

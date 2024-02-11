@@ -93,13 +93,18 @@ function Navber_User() {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item" href="#!">
+                    <Link className="dropdown-item" to="User_login">
                       User Login
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="admin">
+                    <Link className="dropdown-item" to="Admin">
                       Admin Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="Registration">
+                      Register
                     </Link>
                   </li>
                   <li>
