@@ -24,7 +24,7 @@ function Master_layout() {
     <div id='layoutSidenav_content'>
         <main>
         {/* content component will be attached here */}
-        <h1 style={{color:'red'}}>Master File</h1>
+        {/* <h1 style={{color:'red'}}>Master File</h1> */}
         <Outlet/>
         </main>
         <Footer/>
